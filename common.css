@@ -1,0 +1,106 @@
+/* 사용 폰트 */
+@font-face {
+    font-family: 'HangulJaemin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jaemin.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GowoonDodum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+:root {
+  --primary-color: #8b4513;
+  --secondary-color: #d2691e;
+  --accent-color: #c27b48;
+  --bg-color: rgb(255, 250, 241);
+  --text-color: #333;
+  --card-bg: rgba(255, 255, 255, 0.9);
+}
+
+/* 공용 html 태그 */
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: 'GowoonDodum';
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1 { 
+  font-family: 'HangulJaemin';
+  font-weight: 100;
+  font-size: 100px;
+  font-style: italic;
+  color: rgb(240, 240, 240);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.hero p {
+  font-family: 'HangulJaemin';
+  font-style: italic;
+  margin-top: 10px;
+}
+
+main { 
+  text-align: left;
+  margin-left: 100px;
+  padding: 20px;
+}
+
+h2 { 
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.h2-eg { /* h2 영문 폰트 스타일 */
+  font-family: 'HangulJaemin';
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+p { 
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+li {
+  font-size: 19px;
+}
+
+img {
+  margin: 10px 10px 10px 0;
+  border-radius: 15px;
+}
+
+/* 맨 위로 가기 */
+.top-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 9px;
+  border-radius: 10px;
+  font-size: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top-button:hover {
+  background: var(--secondary-color);
+}

@@ -1,0 +1,25 @@
+/* 히어로 섹션 */
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("main.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero p {
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1;
+}
