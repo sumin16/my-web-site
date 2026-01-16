@@ -11,24 +11,21 @@
   <!-- 로딩 스피너 -->
   <div class="loader" id="loader"></div>
 
-  <header>
-    <!--카페 이름-->
-    <section class="hero">
+  <header class="hero">
       <div class="hero-content">
         <h1>The Layer House</h1>
         <p>Always your day and night</p>
       </div>
-    </section>
 
     <!--네비게이션 메뉴-->
     <div class="nav-menu">
       <a href="#top"><img src="logo.png" alt="로고" class="logo" /></a>
       <div class="hamburger"><i class="fas fa-bars"></i></div>
       <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#store">Store</a>
+        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#menu"><i class="fa-solid fa-cookie" style="color:#cc8c1e;"></i> Menu</a>
+        <a href="#gallery"><i class="fa-solid fa-image" style="color: #27a05b;"></i> Gallery</a>
+        <a href="#store"><i class="fa-solid fa-store"></i> Store</a>
       </nav>
     </div>
   </header>
@@ -49,7 +46,7 @@
 
       <!--메뉴-->
       <section id="menu">
-        <h2>메뉴 Menu</h2>
+        <h2><i class="fa-solid fa-cookie" style="color:#cc8c1e;"></i> 메뉴 Menu</h2>
 
         <!--메뉴 카테고리-->
         <div class="menu-filter">
@@ -59,7 +56,7 @@
           <button>커피</button>
           <button>음료</button>
         </div>
-        <h3>🥯 베이커리 Bakery</h3>
+        <h3 class="menu-h3">🥯 베이커리 Bakery</h3>
         <div class="menu-layout">
           <div class="menu-card">
             <h4>플레인 베이글 Plain Bagel</h4>
@@ -98,7 +95,7 @@
           </div>
         </div>
 
-        <h3>🧆 디저트 Dessert</h3>
+        <h3 class="menu-h3">🧆 디저트 Dessert</h3>
         <div class="menu-layout">  
           <div class="menu-card">
             <h4>두바이 초코 타르트 Dubai Chocolate Tart<span class="menu-new">New</span></h4>
@@ -131,7 +128,7 @@
           </div>
         </div>
 
-        <h3>☕ 커피 Coffee</h3>
+        <h3 class="menu-h3">☕ 커피 Coffee</h3>
         <div class="menu-layout">
           <div class="menu-card">
             <h4>아메리카노 Americano</h4>
@@ -158,7 +155,7 @@
           </div>
         </div>
 
-        <h3>🍹 음료 Beverages</h3>
+        <h3 class="menu-h3">🍹 음료 Beverages</h3>
         <div class="menu-layout">  
           <div class="menu-card">
             <h4>체리 얼그레이티 Cherry Earl Grey Tea</h4>
@@ -188,7 +185,7 @@
 
       <!--갤러리-->
       <section id="gallery">
-        <h2>갤러리 Gallery</h2>
+        <h2><i class="fa-solid fa-image" style="color: #27a05b;"></i> 갤러리 Gallery</h2>
         <div class="gallery-layout">
           <img src="thelayerhouse1.jpg" alt="매장 사진(주방)" />
           <img src="thelayerhouse2.png" alt="매장 사진(테이블)" />
@@ -207,22 +204,34 @@
 
       <!--매장 안내-->
       <section id="store">
-        <h2>Store</h2>
-        <p>🗓️ 매주 일요일, 월요일 휴무 🗓️</p>
-        <p>⭐️ 제품 솔드 아웃 시 마감 ⭐️</p>
-        <p>✔️ 방문 전 품절 문의 - Instagram ｜ @the_layer_house ✔️</p>
-        <p>🚫 제품 예약 불가능 🚫</p>
-        <p>🚗 주차 안내 🚗</p>
+        <h2><i class="fa-solid fa-store"></i> Store</h2>
+        <p><i class="fa-solid fa-calendar-days"></i> 영업일정</p>
+        <p style="padding-left: 23px;">
+          <i class="fa-solid fa-circle-check" style="color: #00db07;"></i>
+           화-금 12:00-18:00 / 토 12:00-16:00</p>
+        <p style="padding-left: 23px;">
+          <i class="fa-solid fa-ban" style="color: #ff0000;"></i>
+           일요일, 월요일 휴무</p>
+        <p><i class="fa-solid fa-circle-exclamation"></i> 안내사항</p>
+        <p style="padding-left: 23px;">✔️ 제품 솔드 아웃 시 마감</p>
+        <p style="padding-left: 23px;">✔️ 제품 예약 불가능</p>
+        <p><i class="fa-regular fa-circle-question"></i> 방문 전 품절 문의</p>
+          <p style="padding-left: 23px;">
+            <i class="fab fa-instagram" style="color: #f863ba;"></i>｜ @the_layer_house</p>
+          <p style="padding-left: 23px;">
+            <i class="fa-solid fa-phone" style="color: #ff1a1a;"></i>｜ 0507-1466-1072</p>
+        <p><i class="fa-solid fa-car"></i> 주차 안내</p>
         <ul>
           <li>보라빌딩 주차장 ｜ 카페 앞 위치</li>
           <li>둔전 공영주차장 ｜ 도보 3분</li>
           <li>카카오 T GS더프레시 용인포곡점 주차장 ｜ 도보 4분</li>
         </ul>
-        <p>📍 매장 위치 📍</p>
+        <p><i class="fa-solid fa-location-dot"></i> 매장 위치</p>
         <ul>
           <li>경기도 용인시 처인구 포곡읍 포곡로124번길 7 유정빌딩 1층</li>
-          <li>자세한 위치 정보는 오른쪽 지도 이모지 클릭 시 확인 가능
-            <a href="https://naver.me/G5Pbmwkg" target="_blank" style="font-size: 20px;"><span>🗺️</span>
+          <li>자세한 위치 정보는 오른쪽 아이콘 클릭 시 확인 가능
+            <a href="https://naver.me/G5Pbmwkg" target="_blank" style="font-size: 20px;">
+              <i class="fa-solid fa-location-dot" style="color: red;"></i>
             </a>
           </li>
         </ul>

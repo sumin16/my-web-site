@@ -60,12 +60,6 @@ h1 {
   margin-top: 10px;
 }
 
-main { 
-  text-align: left;
-  margin-left: 100px;
-  padding: 20px;
-}
-
 h2 { 
   font-size: 40px; 
   margin-bottom: 0; 
@@ -114,12 +108,19 @@ img {
 /* 섹션 등장 애니메이션 */
 section {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(50px);
   transition: all 0.8s ease;
+  padding: 30px 100px;
+  margin: 80px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 흐릿한 블러 효과 */
 }
+
+
 section.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 /* 로딩 스피너 */
@@ -135,3 +136,9 @@ section.visible {
 @keyframes spin { 
   100% { transform: rotate(360deg); } 
 }
+
+/* 섹션별 그라디언트 배경 */
+#home, #menu, #gallery, #store {
+  background: linear-gradient(to right, #fff7de, #ffd485);
+}
+
