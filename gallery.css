@@ -3,32 +3,29 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  scroll-snap-type: x mandatory; /* scroll-snap 적용 */
+  overflow-x: auto;
 }
 
 .gallery-layout img {
   object-fit: cover;
   height: 400px;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+  scroll-snap-align: center;
 }
 
 .gallery-layout img:hover {
   transform: scale(1.1);
 }
 
+/* 반응형 */
 @media (max-width: 1024px) {
-  .gallery-layout img {
-    flex: 1 1 calc(33.333% - 20px);
-  }
+  .gallery-layout img { flex: 1 1 calc(33.333% - 20px); }
 }
-
 @media (max-width: 768px) {
-  .gallery-layout img {
-    flex: 1 1 calc(50% - 20px);
-  }
+  .gallery-layout img { flex: 1 1 calc(50% - 20px); }
 }
-
 @media (max-width: 480px) {
-  .gallery-layout img {
-    flex: 1 1 100%;
-  }
+  .gallery-layout img { flex: 1 1 100%; }
 }

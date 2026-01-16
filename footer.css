@@ -9,11 +9,19 @@
   color: #666;
 }
 
-.footer-col {
-  flex: 1;
-  text-align: center;
+.footer-col { 
+  flex: 1; text-align: center; 
+}
+.footer-bold { 
+  font-weight: 700; 
 }
 
-.footer-bold {
-  font-weight: 700;
+/* SNS 아이콘 */
+.footer i {
+  margin: 0 8px;
+  font-size: 20px;
+  color: var(--text-color);
+}
+.footer i:hover { 
+  color: var(--secondary-color); 
 }

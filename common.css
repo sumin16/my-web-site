@@ -20,19 +20,28 @@
   --bg-color: rgb(255, 250, 241);
   --text-color: #333;
   --card-bg: rgba(255, 255, 255, 0.9);
+
+  /* spacing system */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
 }
 
 /* 공용 html 태그 */
-
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body { 
   font-family: 'GowoonDodum';
   margin: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
+  animation: fadeIn 0.8s ease; /* 페이지 전환 애니메이션 */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 h1 { 
@@ -58,33 +67,33 @@ main {
 }
 
 h2 { 
-  font-size: 40px;
-  margin-bottom: 0;
+  font-size: 40px; 
+  margin-bottom: 0; 
 }
 
-.h2-eg { /* h2 영문 폰트 스타일 */
-  font-family: 'HangulJaemin';
-  font-size: 50px;
+.h2-eg { 
+  font-family: 'HangulJaemin'; 
+  font-size: 50px; 
 }
 
-h3 {
-  font-size: 20px;
-  margin-bottom: 0;
+h3 { 
+  font-size: 20px; 
+  margin-bottom: 0; 
 }
 
 p { 
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.2;
+  font-size: 22px; 
+  font-weight: 400; 
+  line-height: 1.2; 
 }
 
-li {
-  font-size: 19px;
+li { 
+  font-size: 19px; 
 }
 
-img {
-  margin: 10px 10px 10px 0;
-  border-radius: 15px;
+img { 
+  margin: 10px 10px 10px 0; 
+  border-radius: 15px; 
 }
 
 /* 맨 위로 가기 */
@@ -100,7 +109,29 @@ img {
   font-size: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.top-button:hover { background: var(--secondary-color); }
 
-.top-button:hover {
-  background: var(--secondary-color);
+/* 섹션 등장 애니메이션 */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 로딩 스피너 */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid var(--accent-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+@keyframes spin { 
+  100% { transform: rotate(360deg); } 
 }
