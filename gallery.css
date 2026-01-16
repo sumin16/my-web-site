@@ -1,22 +1,19 @@
-/* 갤러리 */
+/* 갤러리: 가로 스크롤 + 스냅 */
 .gallery-layout {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  scroll-snap-type: x mandatory; /* scroll-snap 적용 */
-  overflow-x: auto;
+  overflow-x: auto;              /* 가로 스크롤 가능 */
+  scroll-snap-type: x mandatory; /* 스크롤 스냅 */
+  gap: 10px;
+  -webkit-overflow-scrolling: touch; /* 모바일에서 부드럽게 */
 }
 
 .gallery-layout img {
-  object-fit: cover;
-  height: 400px;
+  flex: 0 0 auto;                /* 줄어들지 않고 고정 */
+  max-height: 400px;             /* 최대 높이 제한 */
+  width: auto;                   /* 원본 비율 유지 */
   border-radius: 10px;
+  scroll-snap-align: center;     /* 스크롤 멈출 때 중앙에 맞춤 */
   transition: transform 0.3s ease;
-  scroll-snap-align: center;
-}
-
-.gallery-layout img:hover {
-  transform: scale(1.1);
 }
 
 /* 반응형 */
